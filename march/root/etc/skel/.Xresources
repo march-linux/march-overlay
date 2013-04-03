@@ -49,8 +49,12 @@
 *.color7:       t_selection
 *.color15:      t_current_line
 
+! urxvt
 urxvt.scrollstyle: plain
 urxvt.scrollBar_right: true
 urxvt.saveLines: 16384
 urxvt.font:xft:Droid sans mono:antialias=true:pixelsize=14:bold
 urxvt.boldFont:xft:Droid sans mono:antialias=true:pixelsize=14:bold
+
+! cursor
+Xcursor.theme: Vanilla-DMZ-AA

@@ -26,6 +26,7 @@ device-sound-git
 gtk-engine-murrine
 faience-themes
 faenza-icon-theme
+xcursor-vanilla-dmz-aa
 # browser
 chromium
 flashplugin

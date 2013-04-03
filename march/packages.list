@@ -1,5 +1,5 @@
 # base
-march-overlay
+march-overlay-git
 linux
 pacman
 systemd
@@ -15,14 +15,17 @@ rxvt-unicode
 less
 bash-completion
 # DE
-mimi
+mimi-git
 dmenu
 ttf-droid
 i3-wm
 i3status
-usb-automount
-device-sound
-gnome-icon-theme
+usb-automount-git
+device-sound-git
+# theme
+gtk-engine-murrine
+faience-themes
+faenza-icon-theme
 # browser
 chromium
 flashplugin
@@ -32,7 +35,7 @@ zip
 unzip
 unrar
 atool
-atool-wrapper
+atool-git
 # extra apps
 gvim
 git
@@ -52,14 +55,14 @@ xorg-xinit
 xorg-xrdb
 xsel
 # network
-connman_dmenu
+connman_dmenu-git
 wpa_supplicant
 dhcpcd
 rfkill
 # printing
 cups
 # powersave
-powerdown
+powerdown-git
 # zh_TW
 fcitx-mini
 fcitx-chewing-git

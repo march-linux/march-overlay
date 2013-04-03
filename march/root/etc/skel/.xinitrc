@@ -1,4 +1,6 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+# theme
+export GTK2_RC_FILES="/etc/gtk-2.0/gtkrc"
 
 # IM
 export GTK_IM_MODULE=fcitx

@@ -1,1 +1,4 @@
+#!/bin/bash
+
+shopt -s dotglob
 cp -r /usr/share/march/root/etc/skel/* $HOME

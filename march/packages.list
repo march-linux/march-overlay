@@ -23,8 +23,7 @@ i3status
 usb-automount-git
 device-sound-git
 # theme
-gtk-engine-murrine
-faience-themes
+zukitwo-themes
 faenza-icon-theme
 xcursor-vanilla-dmz
 # browser

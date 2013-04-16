@@ -37,13 +37,13 @@ unrar
 atool
 atool-git
 # extra apps
-gvim
+vim
 git
 packer
 feh
 zathura-pdf-mupdf
 scrot
-ranger-python2-git
+ranger
 google-talkplugin
 # xorg
 xf86-input-synaptics

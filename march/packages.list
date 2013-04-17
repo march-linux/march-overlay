@@ -55,6 +55,7 @@ xorg-xinit
 xorg-xrdb
 xsel
 # network
+connman-git
 connman_dmenu-git
 wpa_supplicant
 dhcpcd

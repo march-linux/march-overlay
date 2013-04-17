@@ -25,10 +25,10 @@ device-sound-git
 # theme
 zukitwo-themes
 faenza-icon-theme
-xcursor-vanilla-dmz
+dmz-git
 # browser
 chromium
-chromium-pepper-flash
+flashplugin
 # archiver
 tar
 zip
@@ -65,5 +65,5 @@ cups
 # powersave
 powerdown-git
 # zh_TW
-fcitx-mini
-fcitx-chewing-git
+fcitx-gtk2
+fcitx-chewing

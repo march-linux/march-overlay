@@ -160,6 +160,9 @@ bar {
         status_command i3status
 }
 
+# colors
+client.unfocused        #f5871f #222222 #d6d6d6 #292d2e
+
 bindsym $mod+F12 exec "amixer sset Master 5+"
 bindsym $mod+F11 exec "amixer sset Master 5-"
 bindsym $mod+F10 exec "amixer sset Master toggle"

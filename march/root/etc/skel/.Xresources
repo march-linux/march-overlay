@@ -53,8 +53,8 @@
 urxvt.scrollstyle: plain
 urxvt.scrollBar_right: true
 urxvt.saveLines: 16384
-urxvt.font:xft:unifont:antialias=true:pixelsize=18:bold
-urxvt.boldFont:xft:unifont:antialias=true:pixelsize=18:bold
+urxvt.font:xft:unifont:antialias=false:pixelsize=18
+urxvt.boldFont:xft:unifont:antialias=false:pixelsize=18
 urxvt.transparent: true
 urxvt.shading: 20
 

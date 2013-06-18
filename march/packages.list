@@ -37,7 +37,7 @@ unrar
 atool
 atool-git
 # extra apps
-vim
+gvim
 git
 packer
 feh

@@ -5,7 +5,7 @@ pacman
 systemd
 systemd-sysvcompat
 sudo
-core/syslinux
+syslinux
 which
 wget
 psmisc

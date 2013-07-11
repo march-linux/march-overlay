@@ -59,4 +59,4 @@ urxvt.transparent: true
 urxvt.shading: 20
 
 ! cursor
-Xcursor.theme: dmz
+Xcursor.theme: Neutral

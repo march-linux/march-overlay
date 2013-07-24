@@ -41,7 +41,7 @@ gvim
 git
 packer
 feh
-zathura-pdf-mupdf
+evince-gtk
 scrot
 ranger
 google-talkplugin

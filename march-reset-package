@@ -4,9 +4,13 @@ pacman -Qqe | sort > /tmp/march-old
 cat /usr/share/march/{packages,extra}.list | grep -v ^# | sort > /tmp/march-new
 
 # to be removed
-pacman -Rsnu $(comm -23 /tmp/march-old /tmp/march-new)
+cat <<EOF
+Remove
+======
+$(comm -23 /tmp/march-old /tmp/march-new)
+EOF
 
 # to be added
-pacman -S $(comm -13 /tmp/march-old /tmp/march-new)
+pacman -Sy $(comm -13 /tmp/march-old /tmp/march-new)
 
 rm /tmp/march-{old,new}

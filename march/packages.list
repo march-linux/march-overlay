@@ -40,6 +40,7 @@ atool
 atool-git
 # extra apps
 gvim
+geany
 git
 packer
 feh

@@ -29,7 +29,8 @@ faenza-icon-theme
 xcursor-neutral
 # browser
 chromium
-chromium-pepper-flash-stable
+chromium-pepper-flash
+chromium-libpdf
 # archiver
 tar
 zip
@@ -42,7 +43,6 @@ gvim
 git
 packer
 feh
-evince-gtk
 scrot
 ranger
 google-talkplugin

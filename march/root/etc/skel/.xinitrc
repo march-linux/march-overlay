@@ -8,5 +8,5 @@ export QT_IM_MODULE=xim
 export XMODIFIERS="@im=fcitx"
 export EDITOR=vim
 LANG=zh_TW.UTF-8 fcitx
-feh --bg-scale ~/.wallpaper/wallpaper.jpg
+feh --bg-scale ~/.config/wallpaper/wallpaper.jpg
 exec i3

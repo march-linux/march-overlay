@@ -39,6 +39,7 @@ unrar
 atool
 atool-git
 # extra apps
+z-git
 gvim
 geany
 git
@@ -48,9 +49,6 @@ scrot
 ranger
 google-talkplugin
 # xorg
-cairo-infinality-ultimate
-fontconfig-infinality-ultimate
-freetype2-infinality-ultimate
 xf86-input-synaptics
 mesa-libgl
 xf86-video-intel

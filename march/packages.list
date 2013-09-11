@@ -49,6 +49,7 @@ scrot
 ranger
 google-talkplugin
 openssh
+rsync
 # xorg
 xf86-input-synaptics
 mesa-libgl

@@ -8,7 +8,6 @@ systemd-sysvcompat
 sudo
 syslinux
 which
-wget
 psmisc
 procps-ng
 alsa-utils
@@ -34,6 +33,7 @@ chromium-libpdf
 # archiver
 tar
 zip
+rar
 unzip
 unrar
 atool
@@ -48,6 +48,7 @@ feh
 scrot
 ranger
 google-talkplugin
+openssh
 # xorg
 xf86-input-synaptics
 mesa-libgl
@@ -63,9 +64,11 @@ connman-git
 connman_dmenu-git
 wpa_supplicant
 dhcpcd
-rfkill
 # printing
 cups
+cups-filters
+gsfonts
+gutenprint
 # powersave
 powerdown-git
 # zh_TW

@@ -5,12 +5,9 @@ libreoffice-calc
 libreoffice-impress
 libreoffice-gnome
 hunspell-en
+# dev
+man
 # torrent
 transmission-qt
-# dev
-openssh
-man
-# archive
-rar
 # media
 vlc-dev

@@ -163,8 +163,8 @@ bar {
 # colors
 client.unfocused        #f5871f #222222 #d6d6d6 #292d2e
 
-bindsym $mod+F12 exec "amixer sset Master 5+"
-bindsym $mod+F11 exec "amixer sset Master 5-"
+bindsym $mod+F12 exec "amixer sset Master 5%+"
+bindsym $mod+F11 exec "amixer sset Master 5%-"
 bindsym $mod+F10 exec "amixer sset Master toggle"
 bindsym $mod+F1 exec "sudo suspend-to-mem"
 bindsym $mod+F2 exec "sudo connman_dmenu"
@@ -173,8 +173,6 @@ bindsym $mod+F4 exec "chromium"
 bindsym $mod+F5 exec "sudo umount_dmenu"
 bindsym $mod+c exec "xsel --primary | xsel --clipboard"
 workspace_layout tabbed
-focus_follows_mouse no
-new_window pixel 5
-new_float pixel 5
 hide_edge_borders both
+focus_follows_mouse no
 force_focus_wrapping yes

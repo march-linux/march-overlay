@@ -38,6 +38,7 @@ unrar
 atool
 atool-git
 # extra apps
+w3m
 z-git
 gvim
 sublime-text-march

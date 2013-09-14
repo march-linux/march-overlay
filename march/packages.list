@@ -10,12 +10,11 @@ syslinux
 which
 psmisc
 procps-ng
-alsa-utils
-rxvt-unicode
-less
 bash-completion
 # DE
 mimi-git
+xterm
+alsa-utils
 dmenu
 ttf-unifont
 i3-wm
@@ -48,6 +47,7 @@ feh
 scrot
 ranger
 google-talkplugin
+less
 openssh
 rsync
 # xorg

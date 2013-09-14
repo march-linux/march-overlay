@@ -49,14 +49,13 @@
 *.color7:       t_selection
 *.color15:      t_current_line
 
-! urxvt
-urxvt.scrollstyle: plain
-urxvt.scrollBar_right: true
-urxvt.saveLines: 16384
-urxvt.font: xft:unifont:antialias=true:pixelsize=18
-urxvt.boldFont: xft:unifont:antialias=true:pixelsize=18
-urxvt.transparent: true
-urxvt.shading: 20
+! term
+xterm.scrollBar: true
+xterm.rightScrollBar: true
+xterm.saveLines: 16384
+xterm.scrollTtyOutput: false
+xterm.faceName: unifont
+xterm.faceSize: 18
 
 ! cursor
 Xcursor.theme: Neutral

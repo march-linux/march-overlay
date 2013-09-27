@@ -11,6 +11,7 @@ which
 psmisc
 procps-ng
 bash-completion
+intel-ucode
 # DE
 mimi-git
 xterm

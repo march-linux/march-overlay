@@ -52,6 +52,7 @@ google-talkplugin
 less
 openssh
 rsync
+mpv
 # xorg
 xf86-input-synaptics
 mesa-libgl

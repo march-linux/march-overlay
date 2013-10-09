@@ -17,7 +17,7 @@ mimi-git
 xterm
 alsa-utils
 dmenu
-ttf-unifont
+ttf-droid
 i3-wm
 i3status
 usb-automount-git

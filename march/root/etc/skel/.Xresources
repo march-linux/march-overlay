@@ -52,7 +52,7 @@
 ! term
 xterm*saveLines: 16384
 xterm*scrollTtyOutput: false
-xterm*faceName: unifont
+xterm*faceName: Droid Sans Mono
 xterm*faceSize: 14
 
 ! cursor

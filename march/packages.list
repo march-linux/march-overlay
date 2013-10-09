@@ -23,8 +23,8 @@ i3status
 usb-automount-git
 device-sound-git
 # theme
-zukitwo-themes
-faenza-icon-theme
+gtk-theme-numix-git
+numix-icon-theme-git
 xcursor-neutral
 # browser
 chromium

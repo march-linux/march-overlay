@@ -56,4 +56,4 @@ xterm*faceName: Droid Sans Mono
 xterm*faceSize: 14
 
 ! cursor
-Xcursor.theme: Neutral
+Xcursor.theme: Vanilla-DMZ

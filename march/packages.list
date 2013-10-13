@@ -23,9 +23,9 @@ i3status
 usb-automount-git
 device-sound-git
 # theme
-ubuntu-themes
-humanity-icon-theme
-xcursor-neutral
+zukitwo-themes
+faenza-icon-theme
+xcursor-vanilla-dmz
 # browser
 chromium
 chromium-pepper-flash

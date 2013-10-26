@@ -29,7 +29,6 @@ xcursor-vanilla-dmz
 # browser
 chromium
 chromium-pepper-flash
-chromium-libpdf
 # archiver
 tar
 zip
@@ -39,6 +38,7 @@ unrar
 atool
 atool-git
 # extra apps
+evince-gtk
 w3m
 z-git
 gvim

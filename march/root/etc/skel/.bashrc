@@ -9,19 +9,23 @@ alias ls='ls --color=auto'
 export PROMPT_COMMAND=__prompt_command
 
 __prompt_command_git() {
+	type git &>/dev/null || return
 	git rev-parse --is-inside-work-tree &>/dev/null || return
-    git diff --quiet --ignore-submodules HEAD &>/dev/null
-    (( $? == 1 )) && echo -n ' *'
+	echo -n ' '
+	git rev-parse --abbrev-ref HEAD | tr -d '\n'
+	git diff --quiet --ignore-submodules HEAD || echo -n '*'
 }
 
 __prompt_command() {
 	local ret="$?"
+	local color
 	PS1="\w$(__prompt_command_git)"
-    if (( $ret == 0 )); then
-		PS1+="❯ "
+	if (( $ret == 0 )); then
+		color=4
 	else
-		PS1+="✕ "
+		color=1
 	fi
+	PS1+="\[$(tput setaf $color)\]❯ \[$(tput sgr0)\]"
 }
 
 . /usr/lib/z.sh

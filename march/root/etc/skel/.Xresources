@@ -52,8 +52,9 @@
 ! term
 xterm*saveLines: 16384
 xterm*scrollTtyOutput: false
-xterm*faceName: Droid
-xterm*faceSize: 14
+xterm*faceNameDoublesize: Droid Sans Fallback
+xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 11
 
 ! cursor
 Xcursor.theme: Vanilla-DMZ

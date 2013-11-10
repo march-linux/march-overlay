@@ -12,8 +12,8 @@ __prompt_command_git() {
 	type git &>/dev/null || return
 	git rev-parse --is-inside-work-tree &>/dev/null || return
 	echo -n ' '
-	git rev-parse --abbrev-ref HEAD | tr -d '\n'
-	git diff --quiet --ignore-submodules HEAD || echo -n '*'
+	git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'
+	git diff --quiet --ignore-submodules HEAD &>/dev/null || echo -n '*'
 }
 
 __prompt_command() {

@@ -27,5 +27,3 @@ __prompt_command() {
 	fi
 	PS1+="\[$(tput setaf $color)\]❯ \[$(tput sgr0)\]"
 }
-
-. /usr/lib/z.sh

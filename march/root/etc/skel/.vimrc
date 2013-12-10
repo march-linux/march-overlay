@@ -10,6 +10,8 @@ filetype plugin indent on
 syntax on
 set number
 set wildmenu
+set wildmode=list:longest,full
+set completeopt=longest,menuone
 
 " search
 set hlsearch

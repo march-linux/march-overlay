@@ -40,7 +40,6 @@ atool-git
 # extra apps
 evince-gtk
 w3m
-z-git
 gvim
 sublime-text-march
 git
@@ -63,6 +62,7 @@ xorg-xinit
 xorg-xrdb
 xsel
 libva-intel-driver
+libvdpau-va-gl
 # network
 connman-git
 connman_dmenu-git

@@ -40,6 +40,7 @@ atool-git
 # extra apps
 evince-gtk
 w3m
+ack
 gvim
 git
 packer

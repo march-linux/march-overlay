@@ -12,17 +12,24 @@ set number
 set wildmenu
 set wildmode=list:longest,full
 set completeopt=longest,menuone
+set laststatus=2
 
 " search
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set magic
 
 " indent
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set expandtab
+set shiftround
+set autoindent
+set smarttab
+set smartindent
 
 " bundle
 set rtp+=~/.vim/bundle/vundle/
@@ -43,3 +50,4 @@ Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_focus_on_files=1
+Bundle 'mileszs/ack.vim'

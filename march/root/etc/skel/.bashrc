@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-export PROMPT_COMMAND=__prompt_command
+PROMPT_COMMAND=__prompt_command
 
 __prompt_command_git() {
 	type git &>/dev/null || return

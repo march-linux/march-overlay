@@ -33,5 +33,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_dotfiles=1
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/syntastic'
+Bundle 'jistr/vim-nerdtree-tabs'
+let g:nerdtree_tabs_open_on_console_startup=1

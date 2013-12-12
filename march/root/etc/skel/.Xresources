@@ -51,7 +51,6 @@
 
 ! term
 xterm*saveLines: 16384
-xterm*scrollTtyOutput: false
 xterm*faceNameDoublesize: Droid Sans Fallback
 xterm*faceName: DejaVu Sans Mono
 xterm*faceSize: 11

@@ -42,7 +42,7 @@ atool-git
 # extra apps
 evince-gtk
 w3m
-ack
+the_silver_searcher
 gvim
 git
 packer

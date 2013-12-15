@@ -25,7 +25,6 @@ set magic
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
-set expandtab
 set shiftround
 set autoindent
 set smarttab
@@ -48,7 +47,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
-let g:nerdtree_tabs_open_on_console_startup=1
-let g:nerdtree_tabs_focus_on_files=1
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Bundle 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'

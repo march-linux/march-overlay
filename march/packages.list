@@ -68,11 +68,8 @@ libvdpau-va-gl
 # network
 connman-git
 connman_dmenu-git
-wpa_supplicant
-dhcpcd
 # printing
 cups
-cups-filters
 gsfonts
 gutenprint
 # powersave

@@ -11,6 +11,6 @@ $(comm -23 /tmp/march-old /tmp/march-new)
 EOF
 
 # to be added
-pacman -Sy $(comm -13 /tmp/march-old /tmp/march-new)
+pacman -Sy --needed $(comm -13 /tmp/march-old /tmp/march-new)
 
 rm /tmp/march-{old,new}

@@ -6,7 +6,14 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
 PROMPT_COMMAND=__prompt_command
+
+__prompt_term_title() {
+	echo -en "\033]2;${PWD##*/}\007"
+}
 
 __prompt_command_git() {
 	type git &>/dev/null || return
@@ -18,12 +25,12 @@ __prompt_command_git() {
 
 __prompt_command() {
 	local ret="$?"
-	local color
 	PS1="\w$(__prompt_command_git)"
 	if (( $ret == 0 )); then
-		color=4
+		PS1+='\[\033[0;34m\]'
 	else
-		color=1
+		PS1+='\[\033[0;31m\]'
 	fi
-	PS1+="\[$(tput setaf $color)\]❯ \[$(tput sgr0)\]"
+	PS1+='❯ \[\033[0m\]'
+	__prompt_term_title
 }

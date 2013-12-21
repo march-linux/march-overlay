@@ -166,7 +166,7 @@ client.unfocused        #f5871f #222222 #d6d6d6 #292d2e
 bindsym $mod+F12 exec "amixer sset Master 5%+"
 bindsym $mod+F11 exec "amixer sset Master 5%-"
 bindsym $mod+F10 exec "amixer sset Master toggle"
-bindsym $mod+F1 exec "sudo pm-suspend-hybrid"
+bindsym $mod+F1 exec "sudo pm-hibernate"
 bindsym $mod+F2 exec "sudo connman_dmenu"
 bindsym $mod+F3 exec "xterm -e ranger"
 bindsym $mod+F4 exec "chromium"

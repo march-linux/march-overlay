@@ -17,6 +17,7 @@ xterm
 alsa-utils
 dmenu
 ttf-droid
+ttf-font-awesome
 i3-wm
 i3status
 usb-automount-git

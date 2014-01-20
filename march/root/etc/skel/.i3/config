@@ -24,7 +24,7 @@ font pango:DejaVu Sans Mono, Awesome 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -168,7 +168,7 @@ bindsym $mod+F11 exec "amixer sset Master 5%-"
 bindsym $mod+F10 exec "amixer sset Master toggle"
 bindsym $mod+F1 exec "sudo pm-hibernate"
 bindsym $mod+F2 exec "sudo connman_dmenu"
-bindsym $mod+F3 exec "xterm -e ranger"
+bindsym $mod+F3 exec "urxvt -e ranger"
 bindsym $mod+F4 exec "chromium"
 bindsym $mod+F5 exec "sudo umount_dmenu"
 bindsym $mod+c exec "xsel --primary | xsel --clipboard"

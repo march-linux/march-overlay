@@ -13,7 +13,7 @@ bash-completion
 intel-ucode
 # DE
 mimi-git
-xterm
+urxvt
 alsa-utils
 dmenu
 ttf-droid

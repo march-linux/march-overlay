@@ -29,10 +29,15 @@
 *color15:    #dddddd
 
 ! term
-xterm*saveLines: 16384
-xterm*faceNameDoublesize: Droid Sans Fallback
-xterm*faceName: DejaVu Sans Mono
-xterm*faceSize: 11
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+URxvt.saveLines: 16384
+URxvt.transparent: true
+URxvt.shading: 20
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=14
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
 
 ! cursor
 Xcursor.theme: Vanilla-DMZ

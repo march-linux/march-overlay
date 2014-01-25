@@ -42,6 +42,7 @@ Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_dotfiles=1
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'

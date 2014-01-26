@@ -29,7 +29,7 @@ faenza-icon-theme
 xcursor-vanilla-dmz
 # browser
 chromium
-chromium-pepper-flash-stable
+chromium-pepper-flash
 # archiver
 tar
 zip

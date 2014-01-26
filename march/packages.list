@@ -14,7 +14,7 @@ bash-completion
 intel-ucode
 # DE
 mimi-git
-urxvt
+rxvt-unicode
 alsa-utils
 dmenu
 ttf-droid

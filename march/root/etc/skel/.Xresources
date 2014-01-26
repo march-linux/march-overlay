@@ -34,7 +34,7 @@ URxvt.scrollBar_right: true
 URxvt.saveLines: 16384
 URxvt.transparent: true
 URxvt.shading: 20
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=14
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=14,xft:Droid Sans Fallback:pixelsize=14
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true

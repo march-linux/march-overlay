@@ -29,6 +29,7 @@ xcursor-vanilla-dmz
 # browser
 chromium
 chromium-pepper-flash
+profile-sync-daemon
 # archiver
 tar
 zip

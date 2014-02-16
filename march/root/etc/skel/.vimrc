@@ -30,6 +30,12 @@ set autoindent
 set smarttab
 set smartindent
 
+" mswin
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
+
 " bundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()

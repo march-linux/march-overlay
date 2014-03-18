@@ -5,10 +5,31 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+# alias
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias grep='grep --color'
+alias ls='ls --group-directories-first --color'
+alias j='jobs'
+alias lla='ls -la'
+alias md5='md5sum'
+alias sudo='sudo -E'
+alias v='vim'
+alias sd='systemctl'
+alias http='python -m http.server 8080'
+
+# golang
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
+# history
+export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd *"
+export HISTCONTROL="ignoreboth:erasedups"
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+
+# prompt
 PROMPT_COMMAND=__prompt_command
 
 __prompt_term_title() {

@@ -16,8 +16,8 @@ alias lla='ls -la'
 alias md5='md5sum'
 alias sudo='sudo -E'
 alias v='vim'
-alias sd='systemctl'
 alias http='python -m http.server 8080'
+alias dsz='find $(pwd -P) -maxdepth 1 -type d -exec du -sh {} + 2>/dev/null | sort -h'
 
 # golang
 export GOPATH="$HOME/go"

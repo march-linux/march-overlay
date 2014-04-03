@@ -1,5 +1,28 @@
-" basic
+" bundle
 set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Plugin 'gmarik/vundle'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kien/ctrlp.vim'
+let g:ctrlp_dotfiles=1
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/syntastic'
+Plugin 'jistr/vim-nerdtree-tabs'
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+Plugin 'mileszs/ack.vim'
+let g:ackprg='ag --nogroup --nocolor --column'
+
+" basic
 set mouse=a
 set encoding=utf-8
 set nobackup
@@ -35,25 +58,3 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
-
-" bundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kien/ctrlp.vim'
-let g:ctrlp_dotfiles=1
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/syntastic'
-Bundle 'jistr/vim-nerdtree-tabs'
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
-Bundle 'mileszs/ack.vim'
-let g:ackprg='ag --nogroup --nocolor --column'

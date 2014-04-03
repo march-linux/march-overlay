@@ -12,7 +12,7 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_dotfiles=1
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
@@ -21,6 +21,12 @@ Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+let g:session_autoload='yes'
+let g:session_autosave='yes'
+let g:session_autosave_periodic=1
+let g:session_default_to_last=1
 
 " basic
 set mouse=a

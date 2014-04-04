@@ -21,12 +21,6 @@ Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
-let g:session_autoload='yes'
-let g:session_autosave='yes'
-let g:session_autosave_periodic=1
-let g:session_default_to_last=1
 
 " basic
 set mouse=a

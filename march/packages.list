@@ -1,6 +1,7 @@
 # base
 march-overlay-git
 linux
+zramswap
 pacman
 systemd
 systemd-sysvcompat
@@ -16,7 +17,7 @@ mimi-git
 rxvt-unicode
 alsa-utils
 dmenu
-ttf-droid
+ttf-unifont
 ttf-font-awesome
 i3-wm
 i3status

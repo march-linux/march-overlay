@@ -1,12 +1,12 @@
 " bundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
@@ -21,6 +21,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'
+call vundle#end()
 
 " basic
 set mouse=a

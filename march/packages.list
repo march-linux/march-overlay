@@ -1,7 +1,7 @@
 # base
 march-overlay-git
 linux
-systemd-swap
+zramswap
 pacman
 systemd
 systemd-sysvcompat

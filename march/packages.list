@@ -12,7 +12,7 @@ psmisc
 procps-ng
 bash-completion
 intel-ucode
-wget
+curl
 # DE
 mimi-git
 rxvt-unicode

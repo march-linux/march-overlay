@@ -17,6 +17,7 @@ b43-firmware
 # DE
 mimi-git
 rxvt-unicode
+urxvt-perls
 alsa-utils
 dmenu
 ttf-unifont
@@ -67,7 +68,6 @@ xf86-video-ati
 xorg-server
 xorg-xinit
 xorg-xrdb
-xsel
 libva-intel-driver
 libvdpau-va-gl
 # network

@@ -171,7 +171,6 @@ bindsym $mod+F2 exec "sudo connman_dmenu"
 bindsym $mod+F3 exec "urxvt -e ranger"
 bindsym $mod+F4 exec "chromium --disk-cache-dir=/tmp/cache"
 bindsym $mod+F5 exec "sudo umount_dmenu"
-bindsym $mod+c exec "xsel --primary | xsel --clipboard"
 workspace_layout tabbed
 hide_edge_borders both
 focus_follows_mouse no

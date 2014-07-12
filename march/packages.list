@@ -22,6 +22,7 @@ alsa-utils
 dmenu
 ttf-unifont
 ttf-font-awesome
+ttf-dejavu
 i3-wm
 i3status
 usb-automount-git

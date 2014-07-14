@@ -37,6 +37,8 @@ chromium-pepper-flash
 profile-sync-daemon
 # archiver
 tar
+gzip
+bzip2
 zip
 rar
 unzip

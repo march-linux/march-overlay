@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if (( $# == 3 )); then
+	xdg-open "$3"
+else
+	aria2c -d ~/Downloads --on-bt-download-complete=3a "$*"
+fi

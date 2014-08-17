@@ -35,5 +35,5 @@ if [[ "$ans" == y ]]; then
     aunpack -q "$1" -X "$target"
     say "task complete."
     cd "$target"
-    bash # stay
+    $SHELL # stay
 fi

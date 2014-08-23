@@ -40,11 +40,9 @@ tar
 gzip
 bzip2
 zip
-rar
+rar-beta
 unzip
-unrar
 atool
-atool-git
 # extra apps
 sublime-text-dev
 evince-gtk

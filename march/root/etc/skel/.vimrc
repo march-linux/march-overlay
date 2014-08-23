@@ -28,6 +28,7 @@ set mouse=a
 set encoding=utf-8
 set nobackup
 set noswapfile
+set backspace=2
 filetype plugin indent on
 
 " look

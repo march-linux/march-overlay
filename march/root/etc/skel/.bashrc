@@ -5,15 +5,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# shopt
+shopt -s autocd cdspell dirspell no_empty_cmd_completion
+
 # alias
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
 alias grep='grep --color'
 alias ls='ls --group-directories-first --color'
 alias j='jobs'
 alias lla='ls -la'
-alias md5='md5sum'
 alias sudo='sudo -E'
 alias v='vim'
 alias http='python -m http.server 8080'
@@ -29,24 +28,19 @@ export HISTCONTROL="ignoreboth:erasedups"
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 
+# git prompt
+[[ -f /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
+
 # prompt
 PROMPT_COMMAND=__prompt_command
 
 __prompt_term_title() {
-	echo -en "\033]2;${PWD##*/}\007"
-}
-
-__prompt_command_git() {
-	type git &>/dev/null || return
-	git rev-parse --is-inside-work-tree &>/dev/null || return
-	echo -n ' '
-	git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'
-	git diff --quiet --ignore-submodules HEAD &>/dev/null || echo -n '*'
+	echo -en "\033]2;$PWD\007"
 }
 
 __prompt_command() {
 	local ret="$?"
-	PS1="\w$(__prompt_command_git)"
+	PS1="\w$(__git_ps1 " (%s)")"
 	if (( $ret == 0 )); then
 		PS1+='\[\033[0;34m\]'
 	else

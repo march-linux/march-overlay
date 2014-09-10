@@ -7,20 +7,22 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required!
 Plugin 'gmarik/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType="context"
+Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_dotfiles=1
 let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 call vundle#end()
 
 " basic

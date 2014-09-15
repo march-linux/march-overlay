@@ -21,9 +21,8 @@ rxvt-unicode
 urxvt-perls
 alsa-utils
 dmenu
-ttf-unifont
+ttf-noto-sans
 ttf-font-awesome
-ttf-dejavu
 i3-wm
 i3status
 usb-automount-git

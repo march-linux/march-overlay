@@ -40,12 +40,12 @@ __prompt_term_title() {
 
 __prompt_command() {
 	local ret="$?"
-	PS1="\w$(__git_ps1 " (%s)")"
+	PS1="\w$(__git_ps1 " %s")"
 	if (( $ret == 0 )); then
 		PS1+='\[\033[0;34m\]'
 	else
 		PS1+='\[\033[0;31m\]'
 	fi
-	PS1+='❯ \[\033[0m\]'
+	PS1+=') \[\033[0m\]'
 	__prompt_term_title
 }

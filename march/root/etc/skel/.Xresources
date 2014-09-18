@@ -32,7 +32,7 @@ URxvt.scrollBar_right: true
 URxvt.saveLines: 16384
 URxvt.transparent: true
 URxvt.shading: 20
-URxvt.font: xft:Noto Sans:pixelsize=14,xft:Noto Sans CJK TC:pixelsize=14
+URxvt.font: xft:Droid Sans Mono:pixelsize=14,xft:Droid Sans Fallback:pixelsize=14
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
@@ -43,7 +43,6 @@ URxvt.colorUL: #4682B4
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-URxvt.letterSpace: -4
 
 ! cursor
 Xcursor.theme: Vanilla-DMZ

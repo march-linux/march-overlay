@@ -18,9 +18,9 @@ alias v='vim'
 alias http='python -m http.server 8080'
 alias dsz='find $(pwd -P) -maxdepth 1 -type d -exec du -sh {} + 2>/dev/null | sort -h'
 
-# golang
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
+# path
+export GOPATH="$HOME"
+export PATH="$PATH:$HOME/bin"
 
 # history
 export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd *"

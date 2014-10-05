@@ -22,7 +22,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'fatih/vim-go'
 call vundle#end()
 
 " basic

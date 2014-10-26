@@ -12,7 +12,6 @@ which
 psmisc
 procps-ng
 bash-completion
-intel-ucode
 curl
 b43-firmware
 # DE

@@ -23,6 +23,7 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
 let g:ackprg='ag --nogroup --nocolor --column'
 Plugin 'fatih/vim-go'
+let g:go_fmt_fail_silently=1
 call vundle#end()
 
 " basic

@@ -7,6 +7,7 @@ pacman
 systemd
 systemd-sysvcompat
 sudo
+intel-ucode
 syslinux
 which
 psmisc

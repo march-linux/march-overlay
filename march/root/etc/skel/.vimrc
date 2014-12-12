@@ -8,13 +8,12 @@ call vundle#begin()
 " required!
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ervandew/supertab'
-let g:SuperTabDefaultCompletionType="context"
+let g:SuperTabDefaultCompletionType='context'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_dotfiles=1
 let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'

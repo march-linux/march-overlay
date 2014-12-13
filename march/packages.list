@@ -11,7 +11,7 @@ intel-ucode
 syslinux
 which
 psmisc
-procps-ng
+htop
 bash-completion
 curl
 b43-firmware

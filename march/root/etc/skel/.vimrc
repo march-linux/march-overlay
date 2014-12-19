@@ -7,8 +7,8 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required!
 Plugin 'gmarik/Vundle.vim'
-Plugin 'ervandew/supertab'
-let g:SuperTabDefaultCompletionType='context'
+Plugin 'Shougo/neocomplete.vim'
+let g:neocomplete#enable_at_startup=1
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
@@ -24,6 +24,7 @@ let g:ackprg='ag --nogroup --nocolor --column'
 Plugin 'fatih/vim-go'
 let g:go_fmt_fail_silently=1
 let g:go_fmt_command='goimports'
+Plugin 'tomasr/molokai'
 call vundle#end()
 
 " basic
@@ -41,6 +42,7 @@ set wildmenu
 set wildmode=list:longest,full
 set completeopt=longest,menuone
 set laststatus=2
+colorscheme molokai
 
 " search
 set hlsearch

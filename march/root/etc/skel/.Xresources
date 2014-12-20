@@ -1,30 +1,23 @@
-*foreground: #D7D0C7
-*background: #151515
-
-!black
-*color0:     #101010
-*color8:     #404040
-!red
-*color1:     #E84F4F
-*color9:     #D23D3D
-!green
-*color2:     #B8D68C
-*color10:    #A0CF5D
-!yellow
-*color3:     #E1AA5D
-*color11:    #F39D21
-!blue
-*color4:     #7DC1CF
-*color12:    #4E9FB1
-!magenta
-*color5:     #9B64FB
-*color13:    #8542FF
-!cyan
-*color6:     #6D878D
-*color14:    #42717B
-!white
-*color7:     #dddddd
-*color15:    #dddddd
+! Molokai theme
+*background: #101010
+*foreground: #d0d0d0
+*cursorColor: #d0d0d0
+*color0: #101010
+*color1: #960050
+*color2: #66aa11
+*color3: #c47f2c
+*color4: #30309b
+*color5: #7e40a5
+*color6: #3579a8
+*color7: #9999aa
+*color8: #303030
+*color9: #ff0090
+*color10: #80ff00
+*color11: #ffba68
+*color12: #5f5fee
+*color13: #bb88dd
+*color14: #4eb4fa
+*color15: #d0d0d0
 
 ! term
 URxvt.scrollstyle: plain

@@ -7,8 +7,8 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required!
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Shougo/neocomplete.vim'
-let g:neocomplete#enable_at_startup=1
+Plugin 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType='context'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
@@ -25,6 +25,7 @@ Plugin 'fatih/vim-go'
 let g:go_fmt_fail_silently=1
 let g:go_fmt_command='goimports'
 Plugin 'tomasr/molokai'
+Plugin 'IndexedSearch'
 call vundle#end()
 
 " basic

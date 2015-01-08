@@ -49,6 +49,7 @@ evince-gtk
 w3m
 the_silver_searcher
 gvim
+ctags
 git
 go
 packer

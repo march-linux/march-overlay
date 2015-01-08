@@ -26,6 +26,8 @@ let g:go_fmt_fail_silently=1
 let g:go_fmt_command='goimports'
 Plugin 'tomasr/molokai'
 Plugin 'IndexedSearch'
+Plugin 'majutsushi/tagbar'
+nmap <F8> :TagbarToggle<CR>
 call vundle#end()
 
 " basic

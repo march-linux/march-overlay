@@ -12,7 +12,7 @@ shopt -s autocd cdspell dirspell no_empty_cmd_completion
 alias grep='grep --color'
 alias ls='ls --group-directories-first --color'
 alias j='jobs'
-alias lla='ls -la'
+alias lla='ls -lA'
 alias sudo='sudo -E'
 alias v='vim'
 alias http='python -m http.server 8080'

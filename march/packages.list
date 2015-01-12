@@ -39,8 +39,9 @@ profile-sync-daemon
 tar
 gzip
 bzip2
+rar
+unrar
 zip
-rar-beta
 unzip
 atool
 # extra apps

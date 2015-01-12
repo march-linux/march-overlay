@@ -53,15 +53,15 @@ set incsearch
 set ignorecase
 set smartcase
 set magic
+set scrolloff=5
 
 " indent
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set shiftround
 set autoindent
 set smarttab
-set smartindent
 
 " mswin
 vmap <C-c> "+yi

@@ -20,7 +20,7 @@ alias dsz='find $(pwd -P) -maxdepth 1 -type d -exec du -sh {} + 2>/dev/null | so
 
 # path
 export GOPATH="$HOME"
-export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/bin:$PATH"
 
 # history
 export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd *"

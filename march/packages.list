@@ -27,6 +27,7 @@ i3-wm
 i3status
 usb-automount-git
 device-sound-git
+compton-git
 # theme
 zukitwo-themes
 faenza-icon-theme

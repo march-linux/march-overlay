@@ -1,16 +1,21 @@
 #!/bin/bash
-[[ $EUID != 0 ]] && exit 1
-pacman -Qqe | sort > /tmp/march-old
-cat /usr/share/march/{packages,extra}.list | grep -v ^# | sort > /tmp/march-new
+sort -u <(expac '%n') <(expac '%E' -l '\n') > /tmp/march-old
+grep -v -h ^# /usr/share/march/{packages,extra}.list | sort -u > /tmp/march-new
+while true; do
+	sort -u /tmp/march-new <(expac '%E' -l '\n' $(</tmp/march-new)) > /tmp/march-new2
+	if cmp -s /tmp/march-new /tmp/march-new2; then
+		rm /tmp/march-new2
+		break
+	fi
+	cp /tmp/march-new2 /tmp/march-new
+done
 
-# to be removed
-cat <<EOF
-Remove
-======
-$(comm -23 /tmp/march-old /tmp/march-new)
-EOF
+echo '[remove]'
+comm -23 /tmp/march-old /tmp/march-new
 
-# to be added
-pacman -Sy --needed $(comm -13 /tmp/march-old /tmp/march-new)
+echo
+
+echo '[add]'
+comm -13 /tmp/march-old /tmp/march-new
 
 rm /tmp/march-{old,new}

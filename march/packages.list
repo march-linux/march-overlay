@@ -1,5 +1,9 @@
 # base
 base-devel
+which
+psmisc
+htop
+less
 march-overlay-git
 linux
 zramswap
@@ -9,16 +13,11 @@ systemd-sysvcompat
 sudo
 intel-ucode
 syslinux
-which
-psmisc
-htop
 bash-completion
 curl
 b43-firmware
 # DE
 mimi-git
-rxvt-unicode
-urxvt-perls
 alsa-utils
 dmenu
 ttf-droid
@@ -28,6 +27,9 @@ i3status
 usb-automount-git
 device-sound-git
 compton-git
+# terminal
+rxvt-unicode
+urxvt-perls
 # theme
 zukitwo-themes
 faenza-icon-theme
@@ -45,23 +47,26 @@ unrar
 zip
 unzip
 atool
-# extra apps
-sublime-text-dev
-evince-gtk
+# file manager
+ranger
 w3m
-the_silver_searcher
+# editor
 gvim
 ctags
+the_silver_searcher
 git
+# video/audio player
+mpv
+jack2-dbus
+# extra apps
+evince-gtk
 go
-packer
 feh
 scrot
-ranger
-less
 openssh
 rsync
-mpv
+# aur
+cower
 # xorg
 xf86-input-synaptics
 mesa-libgl

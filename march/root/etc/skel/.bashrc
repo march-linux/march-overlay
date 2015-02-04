@@ -28,20 +28,8 @@ export HISTFILESIZE=2000
 [[ -f /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
 
 # prompt
-PROMPT_COMMAND=__prompt_command
+GIT_PS1_SHOWCOLORHINTS=true
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
 
-__prompt_term_title() {
-	echo -en "\033]2;$PWD\007"
-}
-
-__prompt_command() {
-	local ret="$?"
-	PS1="\w$(__git_ps1 " %s")"
-	if (( $ret == 0 )); then
-		PS1+='\[\033[0;34m\]'
-	else
-		PS1+='\[\033[0;31m\]'
-	fi
-	PS1+=') \[\033[0m\]'
-	__prompt_term_title
-}
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'

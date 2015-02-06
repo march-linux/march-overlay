@@ -27,6 +27,7 @@ i3status
 usb-automount-git
 device-sound-git
 compton-git
+jshon
 # terminal
 rxvt-unicode
 urxvt-perls

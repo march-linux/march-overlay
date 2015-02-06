@@ -33,3 +33,4 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+trap 'echo -ne "\033]2;${PWD##*/}\007"' DEBUG

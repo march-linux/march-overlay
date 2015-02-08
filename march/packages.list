@@ -66,6 +66,7 @@ scrot
 openssh
 rsync
 aria2
+zathura-pdf-poppler
 # aur
 cower
 # xorg

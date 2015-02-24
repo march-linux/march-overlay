@@ -58,7 +58,6 @@ the_silver_searcher
 git
 # video/audio player
 mpv
-jack2-dbus
 # extra apps
 go
 feh

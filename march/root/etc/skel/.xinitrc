@@ -6,9 +6,9 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 compton -b
 
 # IM
-export GTK_IM_MODULE=xim
-export QT_IM_MODULE=xim
-export XMODIFIERS="@im=fcitx"
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
 LANG=zh_TW.UTF-8 fcitx
 
 exec i3

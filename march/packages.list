@@ -20,6 +20,7 @@ b43-firmware
 mimi-git
 alsa-utils
 dmenu
+ttf-dejavu
 ttf-droid
 ttf-font-awesome
 i3-wm
@@ -58,6 +59,7 @@ the_silver_searcher
 git
 # video/audio player
 mpv
+youtube-dl
 # extra apps
 go
 feh
@@ -73,8 +75,6 @@ xf86-input-synaptics
 mesa-libgl
 xf86-video-intel
 xf86-video-vesa
-xf86-video-nouveau
-xf86-video-ati
 xorg-server
 xorg-xinit
 xorg-xrdb
@@ -85,8 +85,6 @@ connman-git
 connman_dmenu-git
 # printing
 cups
-gsfonts
-gutenprint
 # powersave
 powerdown-git
 # zh_TW

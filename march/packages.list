@@ -20,18 +20,20 @@ b43-firmware
 mimi-git
 alsa-utils
 dmenu
-ttf-dejavu
-ttf-droid
-ttf-font-awesome
 i3-wm
 i3status
 usb-automount-git
 device-sound-git
 compton-git
 jshon
+# font
+ttf-dejavu
+ttf-droid
+ttf-font-awesome
 # terminal
 rxvt-unicode
 urxvt-perls
+urxvt-font-size-git
 # theme
 zukitwo-themes
 faenza-icon-theme

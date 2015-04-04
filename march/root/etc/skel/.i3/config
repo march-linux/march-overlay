@@ -117,9 +117,9 @@ bindsym $mod+Shift+r restart
 
 # exit
 mode "(L)ogout, (R)eboot, (P)oweroff" {
-        bindsym r exec sudo reboot
+        bindsym r exec sudo systemctl reboot
         bindsym l exit
-        bindsym p exec sudo poweroff
+        bindsym p exec sudo systemctl poweroff
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"

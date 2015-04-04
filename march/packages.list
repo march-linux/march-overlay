@@ -22,8 +22,7 @@ alsa-utils
 dmenu
 i3-wm
 i3status
-usb-automount-git
-device-sound-git
+ldm-git
 compton-git
 jshon
 # font
@@ -88,7 +87,7 @@ connman_dmenu-git
 # printing
 cups
 # powersave
-powerdown-git
+tlp
 # zh_TW
 fcitx-mini
 fcitx-chewing

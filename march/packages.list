@@ -27,7 +27,7 @@ compton-git
 jshon
 # font
 ttf-dejavu
-ttf-noto
+ttf-droid
 ttf-font-awesome
 # terminal
 rxvt-unicode

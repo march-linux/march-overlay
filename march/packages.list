@@ -88,6 +88,6 @@ connman_dmenu-git
 cups
 # powersave
 tlp
-# zh_TW
-fcitx-mini
+# input method
+fcitx-minimal
 fcitx-chewing

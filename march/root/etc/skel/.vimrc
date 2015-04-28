@@ -11,16 +11,13 @@ Plugin 'ervandew/supertab'
 let g:SuperTabDefaultCompletionType='context'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'kien/ctrlp.vim'
-let g:ctrlp_dotfiles=1
-let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
-let g:ackprg='ag --nogroup --nocolor --column'
+let g:ackprg='pt --nogroup --nocolor'
 Plugin 'fatih/vim-go'
 let g:go_fmt_fail_silently=1
 let g:go_fmt_command='goimports'
@@ -52,8 +49,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set magic
 set scrolloff=5
+nnoremap / /\v
 
 " indent
 set shiftwidth=2

@@ -17,7 +17,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 Plugin 'mileszs/ack.vim'
-let g:ackprg='pt --nogroup --nocolor -S -e'
+let g:ackprg='ag --vimgrep'
 Plugin 'fatih/vim-go'
 let g:go_fmt_fail_silently=1
 let g:go_fmt_command='goimports'

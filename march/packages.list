@@ -56,7 +56,7 @@ w3m
 # editor
 gvim
 ctags
-the_platinum_searcher
+the_silver_searcher
 git
 # video/audio player
 mpv

@@ -116,40 +116,42 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit
-mode "(L)ogout, (R)eboot, (P)oweroff" {
-        bindsym r exec sudo systemctl reboot
-        bindsym l exit
-        bindsym p exec sudo systemctl poweroff
+mode "(l)ogout, (s)uspend, (h)ibernate, (r)eboot, (p)oweroff" {
+		bindsym l exit
+		bindsym s exec sudo systemctl suspend, mode "default"
+		bindsym h exec sudo systemctl hibernate, mode "default"
+		bindsym r exec sudo systemctl reboot
+		bindsym p exec sudo systemctl poweroff
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+# back to normal: Enter or Escape
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+e mode "(L)ogout, (R)eboot, (P)oweroff"
+bindsym $mod+Shift+e mode "(l)ogout, (s)uspend, (h)ibernate, (r)eboot, (p)oweroff"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+# These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+		bindsym j resize shrink width 10 px or 10 ppt
+		bindsym k resize grow height 10 px or 10 ppt
+		bindsym l resize shrink height 10 px or 10 ppt
+		bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+# same bindings, but for the arrow keys
+		bindsym Left resize shrink width 10 px or 10 ppt
+		bindsym Down resize grow height 10 px or 10 ppt
+		bindsym Up resize shrink height 10 px or 10 ppt
+		bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+# back to normal: Enter or Escape
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -157,19 +159,30 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+	status_command i3status
 }
 
 # colors
 client.unfocused        #f5871f #222222 #d6d6d6 #292d2e
 
-bindsym $mod+F12 exec "amixer sset Master 5%+"
-bindsym $mod+F11 exec "amixer sset Master 5%-"
-bindsym $mod+F10 exec "amixer sset Master toggle"
-bindsym $mod+F1 exec "sudo systemctl hibernate"
-bindsym $mod+F2 exec "sudo connman_dmenu"
-bindsym $mod+F3 exec "urxvt -e ranger"
-bindsym $mod+F4 exec "chromium --disk-cache-dir=/tmp/cache"
+bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym XF86AudioMute exec amixer sset Master toggle
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+mode "(b)rowser, (w)ifi, (f)ile manager" {
+		bindsym b exec chromium --disk-cache-dir=/tmp/cache, mode "default"
+		bindsym w exec sudo connman_dmenu, mode "default"
+		bindsym f exec urxvt -e ranger, mode "default"
+
+# back to normal: Enter or Escape
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+}
+
+bindsym $mod+Tab mode "(b)rowser, (w)ifi, (f)ile manager"
+
 workspace_layout tabbed
 hide_edge_borders both
 focus_follows_mouse no

@@ -79,6 +79,7 @@ xf86-video-vesa
 xorg-server
 xorg-xinit
 xorg-xrdb
+xorg-xbacklight
 libva-intel-driver
 libvdpau-va-gl-git
 # network

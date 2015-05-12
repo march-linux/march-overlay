@@ -88,7 +88,7 @@ connman_dmenu-git
 # printing
 cups
 # powersave
-tlp
+tlp-git
 # input method
 fcitx-minimal
 fcitx-chewing

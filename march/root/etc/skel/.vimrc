@@ -37,6 +37,7 @@ filetype plugin indent on
 
 " look
 syntax on
+set relativenumber
 set number
 set wildmenu
 set wildmode=list:longest,full

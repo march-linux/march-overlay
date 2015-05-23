@@ -27,7 +27,7 @@ URxvt.scrollBar_right: true
 URxvt.saveLines: 16384
 URxvt.transparent: true
 URxvt.shading: 20
-URxvt.font: xft:DejaVu Sans Mono-12
+URxvt.font: xft:DejaVu Sans Mono-10
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true

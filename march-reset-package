@@ -1,6 +1,6 @@
 #!/bin/bash
 sort -u <(expac '%n') <(expac '%E' -l '\n') > /tmp/march-old
-grep -v -h ^# /usr/share/march/{packages,extra}.list | sort -u > /tmp/march-new
+grep -v -h ^# /usr/share/march/packages.list | sort -u > /tmp/march-new
 while true; do
 	sort -u /tmp/march-new <(expac '%E' -l '\n' $(</tmp/march-new)) > /tmp/march-new2
 	if cmp -s /tmp/march-new /tmp/march-new2; then

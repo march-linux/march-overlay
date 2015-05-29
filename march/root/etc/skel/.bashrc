@@ -13,10 +13,8 @@ alias grep='grep --color'
 alias ls='ls --group-directories-first --color'
 alias j='jobs'
 alias lla='ls -lA'
-alias sudo='sudo -E'
+alias sudo='sudo '
 alias v='vim'
-alias http='python -m http.server 8080'
-alias dsz='find $(pwd -P) -maxdepth 1 -type d -exec du -sh {} + 2>/dev/null | sort -h'
 
 # history
 export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd *"

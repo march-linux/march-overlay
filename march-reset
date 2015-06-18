@@ -1,4 +1,4 @@
 #!/bin/bash
 
 (( EUID == 0 )) || exit 1
-cp -r /usr/share/march/root/* /
+cp -r /usr/share/march/root/. /

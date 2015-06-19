@@ -1,39 +1,35 @@
 #!/bin/bash
 
 say() {
-    tput setaf 4
-    echo -n ":: "
-    tput sgr0
-    echo "$1"
+	echo "$(tput setaf 4)::$(tput sgr0) $1"
 }
 
 ask() {
-    tput setaf 3
-    echo -n "-> "
-    tput sgr0
-    echo -n "$1  "
-    read -r "$2"
+	echo -n "$(tput setaf 3)->$(tput sgr0) $1 "
+	read -r "$2"
 }
 
+(( $# == 0 )) && exit 1
+
 clear
-say "List files in the archive"
+say 'List files in the archive'
 als -q "$1" || exit 1
 
 while true; do
-    ask "Do you want to unzip: '$1'? [y|n]" ans
-    case "$ans" in
-    y|n)
-        break
-    ;;
-    esac
+	ask "Do you want to unzip: '$1'? [y|n]" ans
+	case "$ans" in
+		y|n)
+			break
+			;;
+	esac
 done
 
 if [[ "$ans" == y ]]; then
-    target="$(dirname "$1")/unzip_$(basename "$1" | tr -s '[:punct:][:blank:]' _ | tr '[:upper:]' '[:lower:]')"
-    rm -rf "$target"
-    mkdir -p "$target"
-    aunpack -q "$1" -X "$target"
-    say "task complete."
-    cd "$target"
-    $SHELL # stay
+	target="$(dirname "$1")/unzip_$(basename "$1" | tr -s '[:punct:][:blank:]' _ | tr '[:upper:]' '[:lower:]')"
+	rm -rf "$target"
+	mkdir -p "$target"
+	aunpack -q "$1" -X "$target"
+	say 'task complete.'
+	cd "$target"
+	$SHELL # stay
 fi

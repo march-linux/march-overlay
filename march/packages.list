@@ -82,9 +82,9 @@ xorg-xinit
 xorg-xrdb
 xorg-xbacklight
 libva-intel-driver
-libvdpau-va-gl-git
+libvdpau-va-gl
 # network
-connman-git
+connman
 connman_dmenu-git
 # printing
 cups

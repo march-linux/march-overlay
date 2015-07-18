@@ -25,6 +25,7 @@ Plugin 'IndexedSearch'
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 " basic

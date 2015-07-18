@@ -56,7 +56,6 @@ w3m
 # editor
 gvim
 ctags
-vim-youcompleteme-git
 the_silver_searcher
 git
 # video/audio player
@@ -91,5 +90,5 @@ cups
 # powersave
 tlp-git
 # input method
-fcitx-minimal
+fcitx-minimal-git
 fcitx-chewing

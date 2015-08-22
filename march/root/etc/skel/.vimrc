@@ -6,7 +6,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-let g:ycm_confirm_extra_conf=0
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
@@ -25,7 +24,8 @@ Plugin 'IndexedSearch'
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType='context'
 call vundle#end()
 
 " basic

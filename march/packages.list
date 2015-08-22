@@ -22,7 +22,7 @@ alsa-utils
 dmenu
 i3-wm
 i3status
-ldm-git
+ldm
 compton-git
 jshon
 # font
